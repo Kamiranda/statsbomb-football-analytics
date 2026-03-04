@@ -1,0 +1,21 @@
+# Data files (if you add any later)
+data/*
+!data/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
