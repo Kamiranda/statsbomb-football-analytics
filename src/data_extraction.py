@@ -1,5 +1,7 @@
 import pandas as pd
 import json
+import sys
+from data_processing import coordinates
 
 #function to read the json file and create a dataframe with the information of the matches
 def info_json(path):

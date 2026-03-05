@@ -62,12 +62,3 @@ def plot_event_shots(matches, shots):
                                                 matches.away_team.values[0]),
     fontsize=16)
     plt.show()
-    
-#function to save the plot in the outputs/figures folder   
-def save_plot(filename, output_dir='outputs/figures'):
-    
-    import os
-    os.makedirs(output_dir, exist_ok=True)
-    filepath = os.path.join(output_dir, filename)
-    plt.savefig(filepath, dpi=300, bbox_inches='tight')
-    print(f"✓ Plot saved to: {filepath}")
