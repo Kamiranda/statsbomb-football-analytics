@@ -64,6 +64,11 @@ def info_json(path):
     df.set_index('match_id', inplace=True)
     df.sort_values('match_date', inplace=True)
     
+    print('*'*38)
+    print(df, '\n')
+    id_match = int(input('Which match do you want to analyze: '))
+    df = df[df.index == id_match]
+    
     return df
 
 #function to read the json file and create a dataframe with the information of the events
